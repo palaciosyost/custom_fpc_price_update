@@ -6,6 +6,7 @@
     "license": "LGPL-3",
     "depends": ["base", "stock", "sale", "product"],
     "data" : [
+        "security/ir.model.access.csv",
         "view/order_line.xml",
     ],
     "installable": True,

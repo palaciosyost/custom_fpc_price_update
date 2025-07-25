@@ -1,10 +1,16 @@
 from odoo import api, fields, models, _
 from odoo.exceptions import UserError
 
+class TipoEntrega(models.Model):
+    _name = 'medida.tiempo'
+    _description = "Tipo de medida ( entreha )"
+
+    name = fields.Char(string="Nombre")
 
 class SaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
 
+    tipo_entrega = fields.Many2one("medida.tiempo", string="Tipo de entrega")
     price_unit_manual = fields.Boolean(
         string="Precio Modificado Manualmente",
         default=False,

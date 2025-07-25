@@ -9,6 +9,9 @@
             <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='order_lines']/field[@name='order_line']/tree[1]/field[@name='price_unit']" position="after">
                 <field name="price_unit_manual" column_invisible="1"></field>
             </xpath>
+            <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='order_lines']/field[@name='order_line']/tree[1]/field[@name='customer_lead']" position="after">
+                <field name="tipo_entrega" optional="hide" ></field>
+            </xpath>
         </field>
     </record>
 
